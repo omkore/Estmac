@@ -14,6 +14,9 @@
 body{
     width: 100%;
     height: 100vh;
+    /* HIDING HORIZONTAL SCCROLL */
+    overflow-x: hidden;
+    overflow-y: scroll;
 
 }
 
@@ -24,6 +27,8 @@ header{
     max-width: 100%;
     height: 100vh;
     padding-top: 20px;
+    /* box-shadow: 0px 0px 80px #3022f187 ; */
+    /* border-bottom: 10px solid #3022f1a1 ; */
     position: relative;
 }
 .hero{
@@ -71,7 +76,7 @@ margin-right: 20px;
 }
 
 .links li a{
-    font-size: 20px;
+    /* font-size: 20px; */
     font-style: italic;
     text-decoration: none;
     color: white;
@@ -116,7 +121,7 @@ main{
 .select-container{
     background-color: rgba(255, 255, 255, 0.068);
     border-top-left-radius: 20px;
-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -136,6 +141,17 @@ select{
     margin-right: 10px;
     font-size: 18px;
     padding: 10px;
+}
+
+option{
+    color: #1d1d1d;
+    background-color: rgba(255, 255, 255, 0.068);
+    backdrop-filter: blur(10px);
+  
+    
+}
+option:hover{
+    background-color: red;
 }
 
 .cta_btn_hero{
@@ -159,13 +175,15 @@ select{
     max-width: 70%;
     margin: auto;
     display: flex;
-    margin-top: 50px;
+    margin-top: 0px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .btn{
-    padding: 8px 15px;
+    padding: 8px 10px;
     background-color: #4D43EA;
     color: white;
     font-size: 15px;
@@ -193,4 +211,69 @@ gap: 20px;
 
 .features .left p{
     font-size: 20px;
+}
+
+/* .Contact-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+} */
+.map iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius:20px ;
+    position: absolute;
+    left:68%;
+    top:11%;
+    box-shadow: -10px 0 30px  #3022f171;
+    transition: all .5s ease;
+    &:hover{
+    animation: up 1s ease-in-out .1s infinite ;
+    transform: translateY(5px);
+
+    }
+}
+
+@keyframes up {
+    0%{
+    transform: translateY(0px);
+    box-shadow: -5px -5px 30px  #3022f171;
+
+
+    }
+    50%{
+    transform: translateY(5px);
+    box-shadow: -5px 5px 30px  #3022f171;
+    }
+    100%{
+    
+    box-shadow: -5px -5px 30px  #3022f171;
+        transform: translateY(0px);
+
+    }
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contact-form{
+    /* width: 50%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+background-color: #4e43ea3a;
+padding: 10px 20px;
+border-radius: 15px;
+box-shadow: 5px 5px 20px #4e43ea58;
+color: #4D43EA;
+backdrop-filter: blur(10px); */
+
 }

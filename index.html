@@ -9,21 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="soham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="index.js"></script>
+<link rel="stylesheet" href="mobile-view.css">
 </head>
 <body>
+
     <header>
         <div class="hero container">
 
             <nav>
                 <div class="logo-container">
-                    <img class="logo" src="./Assets/Logo.svg" alt="Logo">
+                    <img class="logo left-in" src="./Assets/Logo.svg" alt="Logo">
                 </div>
                 <div class="links-container">
                     <div class="right-nav">
                         <ul class="links">
                             <li><a class="active" href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="#company">Company</a></li>
                             <li><a href="#">Services</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
                         </ul>
                         <div class="cta">
                             <a class="cta_btn" href="#">Get A Quote</a>
@@ -35,29 +42,326 @@
             <main class="container">
                 <img src="./Assets/heading.png" alt="">
                 <div class="select-container">
-                    <select name="" id="">
-                        <option value="Website Development">Create your Website</option>
-                        <option value="Website Development">Create your Application</option>
-                        <option value="Website Development">Business Marketing</option>
+                    <select name="" id="getQuoteSelector">
+                        <option value="General Enquiry">General Enquiry</option>
+                        <option value="Suggestions">Suggestions</option>
+                        <option value="Questions">Questions</option>
+                        <option value="Schedule a Meeting">Schedule a Meeting</option>
+                        <option value="Website Design">Website Design</option>
+                        <option value="Website Design">SEO Optimization</option>
+                        <option value="Custom Web Development">Custom Web Development</option>
+                        <option value="Mobile App Development">Mobile App Development</option>
+                        <option value="Website Maintenance">Website Maintenance</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Online Reputation Management">Online Reputation Management</option>
                     </select>
                     <a class="cta_btn_hero" href="#">Get A Quote</a>
                 </div>
             </main>
+
         </div>
     </header>
+
+    <h1 id="company" class="absolute-center margin-top-30  custom-heading">Our values at Estmac :)</h1>
+    <!-- <h1 id="company" class="absolute-center margin-top-30  custom-heading">Estmac: Service Experiences :)</h1> -->
+    <p style="color: #3229ad;" class="absolute-center margin-bottom-20 ">Estmac believes in delivering exceptional services to our valued clients.</p>
+
+    <div class="values-sections">
+        <!-- <img src="Assets/big-lin.png" class="middle-line" alt=""> -->
+        <section class="features">
+            <div class="half left-in">
+                <h1>Ready to Bring Your <span class="text-bg">Vision</span> to Life</h1>
+                <p>We're here to turn your ideas into exceptional <br>business solutions. Let's collaborate and create <br>something amazing together!</p>
+                <button class="btn margin-top-5" onclick="getQuoteLogic()">
+                    Let's Discuss
+                </button>
+            </div>
+            <div class="half ">
+                <img class="section-illustration right-in" src="./Assets/team.png" alt="">
+            </div>
+        </section>
     
-    <section class="features">
-        <div class="left">
-            <h1>Ready to <br>Bring Your Vision to Life</h1>
-            <p>We're here to turn your ideas into exceptional <br>software solutions. Let's collaborate and create <br>something amazing together.</p>
-            <button class="btn">
-                Let's Discuss
-            </button>
-        </div>
-        <div class="right ">
-            <img src="./Assets/team.png" alt="">
-        </div>
+        <section class="features">
+         
+            <div class="half half-2 ">
+                <img class="section-illustration left-in" src="./Assets/team2.png" alt="">
+            </div>
+            <div class="half">
+                <h1>Why <span class="text-bg">choose us</span> ? </h1>
+                <p>At estmac, we understand that choosing the right partner<br> for your software project is crucial to its success. <br>Here's why we believe we're the best fit for your needs</p>
+                <!-- <button class="btn margin-top-10">
+                    Learn More
+                </button> -->
+            </div>
+        </section>
+    
+        <section class="features">
+            <div class="half">
+                <h1>Our <span class="text-bg">Process</span> </h1>
+                <div class="col">
+                    <p>We believe in a structured and collaborative<br> approach to software development.
+                        Our proven <br>process ensures that your project
+                        is delivered on time,<br> within budget, and to your complete satisfaction.<br>
+                        learn More to know our Process.</p>
+                        
+                      
+                        <div class="scrollable-col" onmouseenter="enableScroll(this)" onmouseleave="disableScroll(this)">
+                            <p class="quote q1"><small><b>1.Discovery & Planning:</b> We begin by thoroughly understanding your project requirements, objectives, and target audience. Through in-depth discussions and research, we develop a comprehensive project plan that outlines the scope, timeline, and deliverables.</small>
+                                <div class="collapsed">
+                                    <p class="quote q2 margin-top-10"><small><b>2.Design & Prototyping:</b> Our talented design team creates visually stunning designs that not only captivate your audience but also enhance usability and functionality. We provide you with prototypes and mockups to ensure that the design aligns with your vision before moving forward.</small></p>
+                                    <p class="quote q3 margin-top-10"><small><b>3.Development & Testing:</b> With the design approved, our development team gets to work bringing your project to life. Using the latest technologies and best practices, we build robust and scalable solutions tailored to your specific needs. Throughout the development process, we conduct rigorous testing to identify and resolve any issues.</small></p>
+                                    <p class="quote q4 margin-top-10"><small><b>4.Deployment & Launch:</b> Once development and testing are complete, we deploy the final product to the appropriate platforms. Whether it's a website, mobile app, or custom software solution, we ensure a smooth and seamless launch to minimize disruption to your business operations. </small></p>
+                                    <p class="quote q5 margin-top-10"><small><b>5.Post-Launch Support:</b> Our commitment to your success doesn't end at launch. We provide ongoing support and maintenance to ensure that your software remains secure, up-to-date, and optimized for performance. From bug fixes to feature enhancements, we're here to support you every step of the way.</small></p>
+                
+                                </div>
+                            </p>
+      
+                        </div>
+                 
+    
+    
+                       
+                </div>
+                
+                <!-- <button class="btn  margin-top-10">
+                    Learn More
+                </button> -->
+            </div>
+            <div class="half ">
+                <img class="section-illustration right-in" src="./Assets/undraw_Thought_process_re_om58.png" alt="">
+            </div>
+        </section>
+    </div>
+
+
+    <section class="card-section margin-top-30 top-in" >
+        <h1 class="custom-heading absolute-center font-largest" style="color: #d62c55;text-shadow: none;">
+            Our <span style="
+            background-image: url(Assets/text-highlight.png);
+            opacity: 1;
+            background-size: cover;
+            background-position: center;backdrop-filter: blur(15px);">Expertise</span>
+        </h1>
+        <p style="color: black;" class="absolute-center margin-bottom-20 ">Discover How We Can Serve You: Explore Our Range of Services</p>
+
+    <small>
+        <div class="card-row">
+
+
+            <div class="card-square custom-website-card" >
+                <div class="col">
+                    <div class="row  full-center">
+                        <img class="card-icon-img" src="Assets/card-magnify-icon.png" alt="">
+                        <h2>Custom Websites</h2>
+
+                    </div>
+                    <hr style="margin: 0px;">
+                    <ul class="padding-20">
+                        <li><span style="color: #D62C55;">Custom-coded</span> website</li>
+                        <li>HTML <span style="color: #D62C55;">Website</span></li>
+                        <li>React-Node <span style="color: #D62C55;">Website</span></li>
+                        <li>Animated <span style="color: #D62C55;">Website</span></li>
+                        <li>PHP <span style="color: #D62C55;">Website</span></li>
+                        <li>E-commerce <span style="color: #D62C55;">Website</span></li>
+                        <li>And many more...</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card-square custom-wordpress-card" >
+                <div class="col">
+                    <div class="row  full-center">
+                        <img class="card-icon-img" src="Assets/card-wordpress-icon.png" alt="">
+                        <h2>Wordpress Website</h2>
+
+                    </div>
+                    <hr>
+                    <ul class="padding-20">
+                        <li>Wordpres <strong ">Blog</strong></li>
+                        <li>Wordpres <strong>Portfolio</strong></li>
+                        <li>Wordpres <strong>Plugin Setup</strong></li>
+                        <li>Wordpres <strong>Affiliate Website</strong></li>
+                        <li>E-commerce <strong>Website</strong></li>
+                        <li>And many more...</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card-square custom-shopify-card" >
+                <div class="col">
+                    <div class="row full-center">
+                        <img class="card-icon-img" src="Assets/card-shopify-icon.png" alt="">
+                        <h2>Shopify Website</h2>
+
+                    </div>
+                    <hr>
+                    <ul class="padding-20">
+                        <li><span style="color: #95BF46;">Custom-coded</span> website</li>
+                        <li>Dropshipping <span style="color: #95BF46;">Store</span></li>
+                        <li>Shopify <span style="color: #95BF46;">Niche Store</span></li>
+                        <li>Shopify <span style="color: #95BF46;">Single Product Store</span></li>
+                        <li>Shopify <span style="color: #95BF46;">General Store</span></li>
+                        <li>Shopify <span style="color: #95BF46;">Custom apps and extensions</span></li>
+                        <li>And many more...</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card-square custom-design-card" >
+                <div class="col">
+                    <div class="row  full-center">
+                        <img class="card-icon-img" src="Assets/card-design-icon.png" alt="">
+                        <h2>Web Design</h2>
+
+                    </div>
+                    <hr>
+                    <ul class="padding-20">
+                        <li><span style="color: #3300FF;">UI/UX</span> Design</li>
+                        <li><span style="color: #3300FF;">Graphic/Assets</span> Design</li>
+                        <li><span style="color: #3300FF;">Logo</span> Design</li>
+                        <li><span style="color: #3300FF;">Ad Banners/Marketing</span> Banners</li>
+                        <li>And many more...</li>
+                    </ul>
+                </div>
+            </div>
+
+    </div>
+</small>
     </section>
+<br>
+
+<div id="contact-section-top" class="h1-contact margin-top-30">
+    <h1 class="custom-heading absolute-center font-largest left-in" style="text-align: start;width: 70%;">
+        Get in touch
+    </h1>
+    <p style="color: black;text-align: start;width: 70%;" class="absolute-center left-in ">Get in Touch with Us Today! 📞✉️ Reach Out to Discover How We Can Help You</p>
+    
+</div>
+<section id="contact" class="features ">
+
+    <div class="contact-section left-in">
+        <div class="half padding-5">
+            <div class="col">
+
+       
+            <h1 class="custom-heading margin-top-10">
+                Let's get started
+            </h1>
+            <h3>Ready to turn your idea into reality?</h3>
+            <hr class="custom-hr">
+            <p class="quote margin-top-5">
+                At estmac, we believe in a structured and collaborative approach to software development. Our proven process ensures that your project is delivered on time, within budget, and to your complete satisfaction. Here's an overview of our process.
+            </p>
+            <div class=" margin-top-10 dark-quote">
+                <img class="social-media-icon select-none" src="Assets/call-icon.png" alt="Call">
+                <img class="social-media-icon select-none" src="Assets/facebook-icon.png" alt="Call">
+                <img class="social-media-icon select-none" src="Assets/instagram-icon.png" alt="Call">
+            </div>
+        </div>
+        </div>
+        <div class="half padding-20">
+
+
+            <div class="card ">
+                <div class="col">
+                    <label class="margin-top-10" for="">Phone</label>
+                    <input type="text" class="custom-input">
+
+                    <label class="margin-top-10" for="">E-mail</label>
+                    <input type="text" class="custom-input">
+
+                    
+                    <label class="margin-top-10" for="" id="select-service-label">Select Service</label>
+                    <select name="select-service" id="select-service">
+                        <option value="General Enquiry">General Enquiry</option>
+                        <option value="Suggestions">Suggestions</option>
+                        <option value="Questions">Questions</option>
+                        <option value="Schedule a Meeting">Schedule a Meeting</option>
+                        <option value="Website Design">Website Design</option>
+                        <option value="Website Design">SEO Optimization</option>
+                        <option value="Custom Web Development">Custom Web Development</option>
+                        <option value="Mobile App Development">Mobile App Development</option>
+                        <option value="Website Maintenance">Website Maintenance</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Online Reputation Management">Online Reputation Management</option>
+                    </select>
+                    
+
+                    <label class="margin-top-10" for="">About your requirement (Required)</label>
+                    <textarea name="" class="custom-input" cols="30" rows="5"></textarea>
+                    <div class="absolute-center">
+                        <input type="button" value="Get Quote" class="btn btn-contact margin-top-10">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="map ">
+        <iframe class="map-frame right-in" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472.5091608419835!2d73.73233440967921!3d18.660707034177396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b175cb3d6497%3A0x874a639b2d3171d1!2sMukai%20chowk%20bus%20stop!5e0!3m2!1sen!2sin!4v1712381920619!5m2!1sen!2sin" width="300" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>                                              
+</section>
+
+<section class="features margin-top-30 card-light top-in" >
+    <h1 class="custom-heading-gold" style="text-align: center;font-size: xx-large;">
+        Our clients Testimonials
+    </h1>
+    <div class="row scroll-x">
+        <div class="testimonial-card" >
+            <div class="col">
+                <img class="testimonial-img" src="Assets/testimonial-scott.png" alt="Scott Druckmann">
+                <h3>Scott Blackwell</h3>
+                <div class="round-container">
+                    <p class="star-icon" style="margin: 0px;">⭐⭐⭐⭐⭐</p>
+                </div>
+
+                <p class="quote-gold">
+                    "Estmac nailed my blog design! Their attention to detail and professionalism were top-notch. Highly recommend them for anyone looking for a great web design experience. Thanks, Estmac!" - Scott Blackwell</p>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="col">
+                <img class="testimonial-img" src="Assets/testimonial-athira.png" alt="Scott Druckmann">
+                <h3>Athira Krushnan</h3>
+                <div class="round-container">
+                    <p class="star-icon" style="margin: 0px;">⭐⭐⭐⭐⭐</p>
+                </div>
+
+
+                <p class="quote-gold">
+
+                    "Choosing Estmac to build our Shopify store was the best decision ever! Our product is now thriving in the global market, thanks to their expertise. Highly recommend!" - Athira Krishnan                </p>
+            </div>        </div>
+        <div class="testimonial-card">
+            <div class="col">
+                <img class="testimonial-img" src="Assets/testimonial-sanjay.png" alt="Scott Druckmann">
+                <h3>Sanjay Sharma</h3>
+                <p class="star-icon">⭐⭐⭐⭐⭐</p>
+
+                <p class="quote-gold">
+                    "Estmac did an amazing job on my personal portfolio website! I'm truly impressed and grateful for their work. It's been a game-changer for my career. Thank you, Estmac!" - Sanjay Sharma                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="dark-theme">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img style="width: 50%;" src="Assets/Logo_Full.png" alt="">
+                <h2>Estmac</h2>
+                <p>123 Street, City</p>
+                <p>Email: example@example.com</p>
+            </div>
+            <div class="footer-right">
+                <a href="#" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
+<script src="animate.js"></script>
 </html>

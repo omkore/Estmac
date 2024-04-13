@@ -1,0 +1,45 @@
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 100%; /* Adjust container width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    
+    #contact{
+        background-color: red;
+
+            opacity: 1;
+            display: flex;
+            flex-direction: column;
+        
+    }
+
+    .contact-section {
+        background: #bdb9ff;
+        border-radius: 10px;
+        max-width: 60%;
+        padding: 10px;
+        display: flex;
+        margin-top: 0px;
+        justify-content: space-between;
+        align-items: flex-start;
+        transition: .5s ease;
+        flex-direction: column;
+    }
+    .map iframe {
+        position: relative;
+        top: auto;
+        left: auto;
+        border-radius: 20px;
+        /* position: absolute; */
+        width: 100%;
+        transition: all .5s ease;
+    }
+    .map{
+        opacity: 1;
+        display: flex;
+        width: 60%;
+    }
+}
